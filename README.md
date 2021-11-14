@@ -1,4 +1,4 @@
-# Sleek
+# Sleek (Backend)
 
 The Sleek backend is implemented as a node express server, that, when hit with a GET request will share the data in two ways.
 1. by sending all the data over
@@ -6,6 +6,7 @@ The Sleek backend is implemented as a node express server, that, when hit with a
 
 The Sleek backend is contains all the data in a map within the program. I wasn't sure if the way this data was collected was important, but as far as I'm concerned, whether this data comes from a table in a DB, or from short term memory on a server somewhere, this step is not a big technical challenge. 
 
+In practice, we would use this server to collect training data for the ML portion of this service. We may also choose to send inference data to the server and results back to the client to offload heavy compute from the extension. 
 
 # to run backend service locally
 1. pull the repository
